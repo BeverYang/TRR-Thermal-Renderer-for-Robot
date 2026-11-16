@@ -1,7 +1,7 @@
 <div align="center">
 
 # TRR
-### A Thermal Robot Renderer for RGB-Thermal Trajectory Generation
+### A Thermal Interaction Engine for Robot Simulation and RGBT Data Generation
 
 **A thermal interaction engine for robot simulation**
 
@@ -65,27 +65,27 @@ The engineering inventory includes ten robot configurations, sixteen thermal-cac
 
 ## Resources
 
-This repository is the public presentation hub for TRR. The initial release contains the overview and demonstration media in [`assets/`](assets/). The project page, simulator release, sample data and developer documentation are being prepared. Links will be added here as those resources become available.
+This repository is the public presentation hub for TRR. The initial release contains the overview and demonstration media in [`assets/`](assets/). The [project page](https://beveryang.github.io/TRR-Thermal-Renderer-for-Robot/) presents TRR and its demonstrations. The simulator release, sample data and developer documentation are being prepared. Links will be added here as those resources become available.
 
 | Resource | Status |
 | :--- | :--- |
 | Overview images and demonstration GIF | Available in this repository |
-| Project website | In planning |
+| Project website | [Visit the project page](https://beveryang.github.io/TRR-Thermal-Renderer-for-Robot/) |
 | Public preprint link | To be added after announcement |
 | Simulator code, examples and documentation | Release preparation |
 | Benchmark and sample data | Release preparation |
 
 ## Team
 
-**[Biwen Yang](https://orcid.org/0009-0009-7887-7906), Zonglu Hu, Zhehao Zhang, [Ruiheng Zhang](https://orcid.org/0000-0002-5460-7196)**  
+**[Biwen Yang](https://orcid.org/0009-0009-7887-7906), Zhe Cao, Jin Zhang, Haoyang Sun, Zonglu Hu, Jintao Zhao, Zhehao Zhang, Kaizheng Chen, Chengyi Liu, Chengyu Wei, Siyuan Wu, [Ruiheng Zhang](https://orcid.org/0000-0002-5460-7196)**  
 Chizhi Lab, Beijing Institute of Technology. Ruiheng Zhang is the corresponding author.
 
 ## Citation
 
 ```bibtex
 @misc{yang_trr,
-  title  = {TRR: A Thermal Robot Renderer for RGB-Thermal Trajectory Generation},
-  author = {Yang, Biwen and Hu, Zonglu and Zhang, Zhehao and Zhang, Ruiheng},
+  title  = {TRR: A Thermal Interaction Engine for Robot Simulation and RGBT Data Generation},
+  author = {Yang, Biwen and Cao, Zhe and Zhang, Jin and Sun, Haoyang and Hu, Zonglu and Zhao, Jintao and Zhang, Zhehao and Chen, Kaizheng and Liu, Chengyi and Wei, Chengyu and Wu, Siyuan and Zhang, Ruiheng},
   year   = {2026},
   url    = {https://github.com/BeverYang/TRR-Thermal-Renderer-for-Robot},
   note   = {Project repository; preprint identifier to be added}
