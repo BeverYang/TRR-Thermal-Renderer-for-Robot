@@ -1,18 +1,39 @@
-<div align="center" class="hero">
-  <h1>TRR</h1>
-  <p class="hero-subtitle">Thermal interaction simulation and RGBT data generation for robots.</p>
-  <p class="hero-logos">
-    <img src="assets/bit-logo.png" alt="Beijing Institute of Technology" height="88">
-    <img src="assets/chizhi-lockup.png" alt="Chizhi Lab · 炽智实验室" height="88">
-  </p>
-  <p class="hero-affiliation"><strong>Chizhi Lab · Beijing Institute of Technology</strong></p>
-  <p class="hero-hook">Giving robots a memory of contact heat.</p>
-  <p class="hero-nav">
-    <a href="#what-trr-does">Overview</a> ·
-    <a href="#see-thermal-history-in-motion">Demonstration</a> ·
-    <a href="#research-highlights">Results</a> ·
+<div class="hero">
+  <div class="hero-copy">
+    <p class="eyebrow">THERMAL INTERACTION ENGINE</p>
+    <h1>TRR</h1>
+    <p class="hero-statement">Every contact leaves a temperature memory for the next one.</p>
+    <p class="hero-meta">Thermal Interaction Engine · MuJoCo + Isaac Sim · 4,448 trajectories</p>
+    <div class="hero-actions">
+      <a class="button-primary" href="#capabilities">Explore the engine</a>
+      <a class="button-secondary" href="https://arxiv.org/html/2611.20792v1">Read the preprint</a>
+    </div>
+  </div>
+
+  <div class="hero-media">
+    <img src="assets/thermal-history-demo.gif" alt="Looping robot demonstration showing temperature-triggered transfer and residual heat on both supports">
+    <div class="residual-callout"><span>Residual heat<br>from previous contact</span></div>
+  </div>
+  <p class="hero-caption">A robot waits, transfers a hot object and reveals the heat left by earlier contacts. <span>Accelerated playback · simulation time shown on screen</span></p>
+
+  <div class="hero-affiliation">
+    <img src="assets/bit-logo.png" alt="Beijing Institute of Technology">
+    <img src="assets/chizhi-lockup.png" alt="Chizhi Lab · 炽智实验室">
+    <span>Chizhi Lab · Beijing Institute of Technology</span>
+  </div>
+  <nav class="hero-nav" aria-label="Page sections">
+    <a href="#capabilities">Capabilities</a>
+    <a href="#technology">Technology</a>
+    <a href="#evidence">Evidence</a>
     <a href="#resources">Resources</a>
-  </p>
+  </nav>
+</div>
+
+<div class="stats-grid" aria-label="TRR scale">
+  <div class="stat"><span class="stat-number">4,448</span><span class="stat-label">trajectories</span></div>
+  <div class="stat"><span class="stat-number">2,224</span><span class="stat-label">condition pairs</span></div>
+  <div class="stat"><span class="stat-number">6</span><span class="stat-label">tasks</span></div>
+  <div class="stat"><span class="stat-number">2</span><span class="stat-label">backends</span></div>
 </div>
 
 ## From one contact to the next
@@ -21,88 +42,66 @@
 
 Earlier actions change the temperature of the object, gripper and supports. After the object leaves, those traces remain; subsequent contacts encounter the accumulated thermal history rather than a reset scene.
 
-<figure class="figure">
+<figure class="figure feature-figure">
   <img src="assets/thermal-interaction-sequence.png" alt="RGB and thermal sequences of transfer, regrasp, cooling and residual heat">
-  <figcaption><strong>Look at the boxed insets A and B in the final frames:</strong> they reveal residual heat left by earlier contacts. RGB and thermal rows show the same executions.</figcaption>
-</figure>
-
-## See thermal history in motion
-
-<p class="demo-guide"><strong>Watch the thermal views:</strong> heat remains at the first support after transfer, then shapes what the robot encounters at the next contact.</p>
-
-<figure class="figure">
-  <img src="assets/thermal-history-demo.gif" alt="Temperature-triggered transfer and heat retained on both supports">
-  <figcaption>RGB, thermal views and temperature traces follow one execution: a robot waits for a hot object to cool, transfers it between supports and reveals earlier contact traces. <span class="caption-detail">Accelerated engineering demonstration; simulation time is shown on screen.</span></figcaption>
+  <figcaption><strong>The boxed insets A and B are the evidence:</strong> residual heat from earlier contacts remains visible in the final thermal frames.</figcaption>
 </figure>
 
 ## What TRR does
+{: #capabilities}
 
-TRR connects robot motion, evolving material temperature and synchronized RGB–thermal observations. Its three central capabilities are:
-
-<div class="card-grid">
-  <div class="info-card">
+<div class="capability-grid">
+  <div class="capability-card">
+    <span class="card-index">01</span>
     <h3>Persistent thermal memory</h3>
     <p>Contact traces stay on objects and grippers after separation.</p>
     <p class="card-detail">Surface patterns and internal heat storage move with the material.</p>
   </div>
-  <div class="info-card">
+  <div class="capability-card">
+    <span class="card-index">02</span>
     <h3>Contact-driven evolution</h3>
     <p>Every contact can change what happens next.</p>
-    <p class="card-detail">Heating, cooling, transfer, separation and recontact evolve within one robot execution.</p>
+    <p class="card-detail">Heating, cooling, transfer, separation and recontact evolve within one execution.</p>
   </div>
-  <div class="info-card">
+  <div class="capability-card">
+    <span class="card-index">03</span>
     <h3>Task-grounded observations</h3>
-    <p>RGBT data stay synchronized with robot states, actions and task outcomes.</p>
-    <p class="card-detail">Object, contact-region, timing and mechanical checks produce pass, fail or unresolved records.</p>
+    <p>RGBT data stay synchronized with robot states, actions and outcomes.</p>
+    <p class="card-detail">Task checks produce pass, fail or unresolved records.</p>
   </div>
 </div>
 
-Reusable scene resources include thermal assets, camera calibration and observation adapters for MuJoCo and Isaac Sim.
+## Technology, in thermal signals
+{: #technology}
 
-## Benchmark at a glance
-
-<p class="section-intro">The paired benchmark repeats identical robot motions with fixed and evolving thermal fields.</p>
-
-<div class="stats-grid" aria-label="TRR benchmark scale">
-  <div class="stat"><span class="stat-number">4,448</span><span class="stat-label">trajectories</span></div>
-  <div class="stat"><span class="stat-number">2,224</span><span class="stat-label">condition pairs</span></div>
-  <div class="stat"><span class="stat-number">6</span><span class="stat-label">tasks</span></div>
-</div>
-
-<p class="caption">Each condition pair contains one static-field and one dynamic-field trajectory: 2,224 of each.</p>
-
-## How TRR works
-
-<div class="card-grid module-grid">
-  <div class="info-card">
-    <h3>How does the robot interact?</h3>
-    <p>Concurrent and sequential contacts, including separation and recontact.</p>
+<div class="module-grid">
+  <div class="module-card">
+    <img src="assets/modules/interaction.png" alt="Robot grasping an object during a simulated interaction">
+    <div class="module-copy"><h3>Robot interaction</h3><p>Concurrent contacts, separation and recontact share one evolving scene.</p></div>
   </div>
-  <div class="info-card">
-    <h3>Where is heat stored?</h3>
-    <p>Surface traces and depth-dependent internal heat.</p>
+  <div class="module-card">
+    <img src="assets/modules/storage.png" alt="Thermal image showing heat stored on an object surface">
+    <div class="module-copy"><h3>Thermal storage</h3><p>Surface traces and internal heat move with the object.</p></div>
   </div>
-  <div class="info-card">
-    <h3>How does heat evolve?</h3>
-    <p>Contact exchange, diffusion and ambient exchange.</p>
+  <div class="module-card">
+    <img src="assets/modules/transfer.png" alt="Residual thermal traces marked on two supports after contact">
+    <div class="module-copy"><h3>Heat transfer</h3><p>Heat enters at contact, diffuses through material and remains after separation.</p></div>
   </div>
-  <div class="info-card">
-    <h3>What does the thermal camera see?</h3>
-    <p>Surface temperature → radiation → camera response → temperature image.</p>
-    <p class="card-detail">Matte and reflective responses; temperature in °C and an 8-bit display mapping.</p>
+  <div class="module-card">
+    <img src="assets/modules/camera.png" alt="Thermal camera output with an RGB inset">
+    <div class="module-copy"><h3>Thermal camera</h3><p>It sees surface temperature, not color.</p><p class="card-detail">Matte / Reflective responses · °C and 8-bit display output</p></div>
   </div>
-  <div class="info-card">
-    <h3>Which robots are represented?</h3>
-    <p>Franka Panda, xArm 7 and Piper assets.</p>
+  <div class="module-card">
+    <img src="assets/modules/robots.png" alt="Franka Panda, xArm 7 and Piper robot assets">
+    <div class="module-copy"><h3>Robot assets</h3><p>Franka Panda, xArm 7 and Piper interact with the same thermal state.</p></div>
   </div>
-  <div class="info-card">
-    <h3>How are outcomes checked?</h3>
-    <p>Object, region, timing and completion checks.</p>
-    <p class="card-detail">Each task event is recorded as pass, fail or unresolved.</p>
+  <div class="module-card">
+    <img src="assets/modules/outcomes.png" alt="Object, region, timing and completion task checks">
+    <div class="module-copy"><h3>Task-event checks</h3><p>Object, region, timing and completion checks ground each outcome.</p><p class="card-detail">Pass · Fail · Unresolved</p></div>
   </div>
-  <div class="info-card">
-    <h3>What is recorded together?</h3>
-    <p>RGB, thermal images, timestamped actions and robot states.</p>
+  <div class="module-card">
+    <img src="assets/modules/observations.png" alt="Synchronized RGB, thermal, action and robot-state records">
+    <div class="module-copy"><h3>Synchronized RGBT</h3><p>RGB, thermal images, timestamped actions and robot states stay aligned.</p></div>
   </div>
 </div>
 
@@ -111,64 +110,60 @@ Reusable scene resources include thermal assets, camera calibration and observat
   <img src="assets/trr-overview.png" alt="TRR system overview: robot interaction, heat storage and transfer, thermal imaging, assets, task events and synchronized RGBT observations">
 </details>
 
-## RGBT observations across backends
+## One thermal state, two simulation backends
 
-<figure class="figure">
+<figure class="figure backend-figure">
   <img src="assets/rgbt-backends.png" alt="MuJoCo Piper and Isaac Sim Franka RGB-thermal examples">
-  <figcaption><strong>MuJoCo (Piper, left)</strong> and <strong>Isaac Sim (Franka, right)</strong>, with RGB insets. Temperature images share a display scale; gray regions have unavailable temperature samples. The dynamic interaction and learning studies below use MuJoCo-based workflows.</figcaption>
+  <figcaption><strong>MuJoCo · Piper</strong> and <strong>Isaac Sim · Franka</strong>, with RGB insets. Temperature images share a display scale; gray regions have unavailable samples. Dynamic interaction and learning studies use MuJoCo-based workflows.</figcaption>
 </figure>
 
-## Research highlights
+## From scene to synchronized data
 
-<p class="section-intro">The benchmark and the two learning studies use separate corpora. The transfer result measures simulated task completion with learned region selection and a shared feedback executor.</p>
+<ol class="workflow">
+  <li><span>01</span><div><strong>Build the scene</strong><p>Geometry, objects, supports, robot motion and camera placement.</p></div></li>
+  <li><span>02</span><div><strong>Configure the thermal state</strong><p>Materials, initial fields, contact parameters and camera response.</p></div></li>
+  <li><span>03</span><div><strong>Run the interaction</strong><p>Thermal evolution and robot motion advance together.</p></div></li>
+  <li><span>04</span><div><strong>Inspect and export</strong><p>Synchronized observations, states, action intervals and task events.</p></div></li>
+</ol>
 
-<div class="result-list">
-  <div class="result-card">
-    <h3>Thermal history can change a task label</h3>
-    <p><strong>444 motions</strong> that pass with a fixed thermal field become thermal violations when the field evolves.</p>
-    <p class="card-detail">The validity of the same motion depends on its thermal history.</p>
-  </div>
-  <div class="result-card">
-    <h3>Visible thermal history improves contact-site selection</h3>
-    <p><strong>91.7% vs. 75.0% safe choices</strong> for full visible RGBT history versus a matched final-frame-repeat control.</p>
-  </div>
-  <div class="result-card">
-    <h3>Dynamic thermal training transfers better</h3>
-    <p><strong>+50 percentage points</strong> under a new heating procedure for dynamic versus static training, using region selection with a shared feedback executor.</p>
-  </div>
-</div>
-
-## A developer's workflow
-
-1. **Start with a robot scene:** geometry, objects, supports, motion and camera placement.
-2. **Configure thermal assets:** materials, initial fields, contact parameters and camera response.
-3. **Execute the interaction:** evolve the thermal state alongside robot motion and sample observations at configured times.
-4. **Inspect and export:** use synchronized observations, states, action intervals and task events for demonstrations, data analysis and learning.
-
-The engineering inventory includes ten robot configurations, sixteen thermal-cache categories and six demonstrated camera viewpoints. LeRobot and robomimic formats have small-batch loading checks. These counts describe their respective resources, as recorded in the October 2026 engineering inventory.
+<p class="engineering-note">Engineering inventory: 10 robot configurations · 16 thermal-cache categories · 6 demonstrated camera viewpoints. LeRobot and robomimic formats have small-batch loading checks. Counts refer to the October 2026 inventory.</p>
 
 ## Resources
 
 <div class="resource-grid">
-  <div class="resource-card">
-    <h3>Project & media</h3>
-    <ul>
-      <li><a href="https://github.com/BeverYang/TRR-Thermal-Renderer-for-Robot">GitHub repository</a></li>
-      <li><a href="https://github.com/BeverYang/TRR-Thermal-Renderer-for-Robot/tree/main/assets">Overview images and demonstration GIF</a></li>
-    </ul>
-  </div>
-  <div class="resource-card">
-    <h3>Paper</h3>
-    <ul>
-      <li><a href="https://arxiv.org/html/2611.20792v1">Read the preprint · arXiv:2611.20792</a></li>
-      <li><a href="#citation">Citation</a></li>
-    </ul>
-  </div>
+  <a class="resource-card" href="https://github.com/BeverYang/TRR-Thermal-Renderer-for-Robot">
+    <span class="resource-type">PROJECT</span><strong>GitHub repository</strong><span>Project history and public materials ↗</span>
+  </a>
+  <a class="resource-card" href="https://github.com/BeverYang/TRR-Thermal-Renderer-for-Robot/tree/main/assets">
+    <span class="resource-type">MEDIA</span><strong>Demonstration assets</strong><span>Overview images and the looping demonstration ↗</span>
+  </a>
+  <a class="resource-card" href="https://arxiv.org/html/2611.20792v1">
+    <span class="resource-type">PAPER</span><strong>Public preprint</strong><span>Read arXiv:2611.20792 ↗</span>
+  </a>
 </div>
 
-<p class="caption">This repository is the public presentation hub for TRR; its <code>assets/</code> directory contains the overview and demonstration media shown here.</p>
+## Evidence behind the engine
+{: #evidence}
 
-<p class="closing">TRR makes thermal history part of robot simulation: contact is no longer a one-off collision, but a temperature memory that later actions can read.</p>
+<p class="section-intro">The paper and benchmarks validate the product claims without interrupting the product tour.</p>
+
+<details class="evidence-panel">
+  <summary>Read benchmark and learning results</summary>
+  <div class="evidence-content">
+    <p>The paired benchmark repeats identical robot motions with fixed and evolving thermal fields: 2,224 static-field and 2,224 dynamic-field trajectories across six tasks.</p>
+    <p class="card-detail">The benchmark and the two learning studies use separate corpora. Transfer measures simulated task completion with learned region selection and a shared feedback executor.</p>
+    <div class="result-list">
+      <div class="result-card"><h3>Thermal history can change a task label</h3><p><strong>444 motions</strong> that pass with a fixed thermal field become thermal violations when the field evolves.</p><p class="card-detail">The validity of the same motion depends on its thermal history.</p></div>
+      <div class="result-card"><h3>Visible thermal history improves contact-site selection</h3><p><strong>91.7% vs. 75.0% safe choices</strong> for full visible RGBT history versus a matched final-frame-repeat control.</p></div>
+      <div class="result-card"><h3>Dynamic thermal training transfers better</h3><p><strong>+50 percentage points</strong> under a new heating procedure for dynamic versus static training, using region selection with a shared feedback executor.</p></div>
+    </div>
+  </div>
+</details>
+
+<div class="closing">
+  <img src="assets/thermal-mark.svg" alt="" width="64" height="64">
+  <p>Contact is no longer a one-off collision. It is a temperature memory that later actions can read.</p>
+</div>
 
 ## Team
 

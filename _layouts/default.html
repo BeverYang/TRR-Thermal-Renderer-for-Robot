@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 {% seo %}
+    <meta name="theme-color" content="#0a0806">
+    <link rel="icon" href="{{ '/assets/thermal-mark.svg' | relative_url }}" type="image/svg+xml">
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
   </head>
   <body>
-    <div class="container-lg px-3 my-5 markdown-body">
+    <div class="page-shell px-3 my-5 markdown-body">
       {{ content }}
 
       <div class="footer border-top border-gray-light mt-5 pt-3 text-right text-gray">
