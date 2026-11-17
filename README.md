@@ -65,15 +65,13 @@ The engineering inventory includes ten robot configurations, sixteen thermal-cac
 
 ## Resources
 
-This repository is the public presentation hub for TRR. The initial release contains the overview and demonstration media in [`assets/`](assets/). The [project page](https://beveryang.github.io/TRR-Thermal-Renderer-for-Robot/) presents TRR and its demonstrations. The simulator release, sample data and developer documentation are being prepared. Links will be added here as those resources become available.
+This repository is the public presentation hub for TRR. The initial release contains the overview and demonstration media in [`assets/`](assets/). The [project page](https://beveryang.github.io/TRR-Thermal-Renderer-for-Robot/) presents TRR and its demonstrations.
 
 | Resource | Status |
 | :--- | :--- |
 | Overview images and demonstration GIF | Available in this repository |
 | Project website | [Visit the project page](https://beveryang.github.io/TRR-Thermal-Renderer-for-Robot/) |
-| Public preprint link | To be added after announcement |
-| Simulator code, examples and documentation | Release preparation |
-| Benchmark and sample data | Release preparation |
+| Public preprint | [arXiv:2611.20792](https://arxiv.org/html/2611.20792v1) |
 
 ## Team
 
@@ -88,7 +86,7 @@ Chizhi Lab, Beijing Institute of Technology. Ruiheng Zhang is the corresponding 
   author = {Yang, Biwen and Cao, Zhe and Zhang, Jin and Sun, Haoyang and Hu, Zonglu and Zhao, Jintao and Zhang, Zhehao and Chen, Kaizheng and Liu, Chengyi and Wei, Chengyu and Wu, Siyuan and Zhang, Ruiheng},
   year   = {2026},
   url    = {https://github.com/BeverYang/TRR-Thermal-Renderer-for-Robot},
-  note   = {Project repository; preprint identifier to be added}
+  note   = {Preprint: \url{https://arxiv.org/html/2611.20792v1}}
 }
 ```
 
