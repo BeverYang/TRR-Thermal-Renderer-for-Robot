@@ -1,4 +1,4 @@
-<div align="center">
+<div align="center" markdown="1">
 
 # TRR
 ### A Thermal Interaction Engine for Robot Simulation and RGBT Data Generation
