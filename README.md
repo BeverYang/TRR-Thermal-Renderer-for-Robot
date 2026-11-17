@@ -7,6 +7,11 @@
 
 Contact leaves heat behind. TRR carries that history into the next interaction.
 
+<p>
+  <img src="assets/bit-logo.png" alt="Beijing Institute of Technology" height="96" hspace="14">
+  <img src="assets/chizhi-lockup.png" alt="Chizhi Lab · 炽智实验室" height="96" hspace="14">
+</p>
+
 **Chizhi Lab · Beijing Institute of Technology**
 
 [Overview](#what-trr-does) · [Demonstrations](#thermal-history-in-motion) · [Results](#research-highlights) · [Resources](#resources)
