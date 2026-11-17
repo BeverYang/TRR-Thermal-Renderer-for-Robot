@@ -3,8 +3,6 @@
 # TRR
 ### A Thermal Interaction Engine for Robot Simulation and RGBT Data Generation
 
-**A thermal interaction engine for robot simulation**
-
 Contact leaves heat behind. TRR carries that history into the next interaction.
 
 <p>
