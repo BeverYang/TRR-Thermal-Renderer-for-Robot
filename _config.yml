@@ -1,2 +1,3 @@
 title: TRR
-description: A Thermal Interaction Engine for Robot Simulation and RGBT Data Generation
+description: Thermal interaction simulation and RGBT data generation for robots.
+theme: jekyll-theme-primer
