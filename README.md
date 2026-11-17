@@ -17,8 +17,8 @@
   <p class="hero-caption">A robot waits, transfers a hot object and reveals the heat left by earlier contacts. <span>Accelerated playback · simulation time shown on screen</span></p>
 
   <div class="hero-affiliation">
-    <img src="assets/bit-logo.png" alt="Beijing Institute of Technology">
-    <img src="assets/chizhi-lockup.png" alt="Chizhi Lab · 炽智实验室">
+    <img src="assets/bit-logo-mono.png" alt="Beijing Institute of Technology">
+    <img src="assets/chizhi-lockup-mono.png" alt="Chizhi Lab · 炽智实验室">
     <span>Chizhi Lab · Beijing Institute of Technology</span>
   </div>
   <nav class="hero-nav" aria-label="Page sections">
