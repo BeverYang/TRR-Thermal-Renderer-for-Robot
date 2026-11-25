@@ -1266,3 +1266,50 @@ p {
     transition: none;
   }
 }
+
+.hero-copy {
+  margin-inline: auto;
+  text-align: center;
+}
+
+.hero-copy h1,
+.hero-description {
+  margin-inline: auto;
+}
+
+.section-header {
+  margin-inline: auto;
+  text-align: center;
+}
+
+.section-header p {
+  margin-inline: auto;
+}
+
+.core-media {
+  width: 100%;
+  margin-inline: auto;
+}
+
+.core-desktop {
+  aspect-ratio: 32 / 15;
+}
+
+.future-note {
+  margin-inline: auto;
+  text-align: center;
+}
+
+.site-footer .container {
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .core-media {
+    width: min(100%, 420px);
+  }
+
+  .core-mobile {
+    aspect-ratio: 4 / 7;
+  }
+}
