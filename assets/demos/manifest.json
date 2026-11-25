@@ -9,10 +9,11 @@
       "poster": "moon.jpg",
       "width": 1280,
       "height": 600,
-      "duration_seconds": 57.166667,
-      "bytes": 364139,
-      "sha256": "8a3cc36dd36236472b340f0bdbde9115d4ecff60cafcd12d1d08b0b5320d946f",
-      "source_ref": "final/rl_scenes/moon/film.mp4"
+      "duration_seconds": 81.866667,
+      "bytes": 1443361,
+      "sha256": "17984bfa353ed00ae3fe829bcafbf29ab139ec9ad20056d8fe7e7352e1d38e3b",
+      "source_ref": "final/rl_scenes/moon/film.mp4",
+      "robot": "Two complete Franka Panda models with factory grippers"
     },
     {
       "id": "weld",
