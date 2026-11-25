@@ -88,4 +88,39 @@
       if (video.getClientRects().length === 0) video.pause();
     });
   });
+
+  const navLinks = Array.from(document.querySelectorAll('.nav-links a[href^="#"]'));
+  const updateActiveNav = () => {
+    let current = '';
+    navLinks.forEach((link) => {
+      const section = document.querySelector(link.getAttribute('href'));
+      if (section && section.getBoundingClientRect().top <= 160) current = link.getAttribute('href');
+    });
+    navLinks.forEach((link) => {
+      const active = link.getAttribute('href') === current;
+      link.classList.toggle('is-active', active);
+      if (active) link.setAttribute('aria-current', 'location');
+      else link.removeAttribute('aria-current');
+    });
+  };
+  updateActiveNav();
+  window.addEventListener('scroll', updateActiveNav, { passive: true });
+
+  const heroFlow = document.querySelector('.hero-flow');
+  if (heroFlow && !reducedMotion.matches) {
+    heroFlow.classList.add('will-animate');
+    setTimeout(() => heroFlow.classList.add('is-ready'), 50);
+  }
+
+  const timeline = document.querySelector('.stage-timeline');
+  if (timeline && 'IntersectionObserver' in window && !reducedMotion.matches) {
+    timeline.classList.add('timeline-animated');
+    const timelineObserver = new IntersectionObserver((entries) => {
+      if (entries.some((entry) => entry.isIntersecting)) {
+        timeline.classList.add('is-visible');
+        timelineObserver.disconnect();
+      }
+    }, { threshold: 0.35 });
+    timelineObserver.observe(timeline);
+  }
 })();
