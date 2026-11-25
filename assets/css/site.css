@@ -621,3 +621,16 @@ body {
 body{margin:0;font-family:Inter,"Noto Sans SC","Microsoft YaHei",sans-serif}.page-shell{padding:0 28px}.markdown-body h1{font-size:clamp(3.5rem,7vw,6rem)}a{color:#ff8b59;text-decoration:none}.hero-statement{max-width:900px!important;font-size:clamp(1.7rem,3.5vw,3rem)!important}.hero-meta{max-width:760px}.hero-nav{flex-wrap:wrap}.platform-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:28px 0}.platform-card{padding:30px;border:1px solid var(--trr-border);background:var(--trr-surface);border-radius:14px}.platform-card h3{font-size:1.5rem;margin:12px 0}.platform-card small{color:var(--trr-signal)}.demo-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px}.demo-card{border:1px solid var(--trr-border);border-radius:14px;overflow:hidden;background:var(--trr-surface)}.demo-card video{display:block;width:100%;aspect-ratio:16/9;background:#000;object-fit:contain}.demo-copy{padding:22px}.demo-copy h3{margin:0 0 8px;font-size:1.35rem}.demo-copy p{margin:0;color:var(--trr-body)}.demo-card:last-child{grid-column:1/-1}.demo-card:last-child video{max-height:650px}.scope{font-size:.88rem;color:var(--trr-muted);margin-top:20px}.needs{display:flex;gap:12px;flex-wrap:wrap;margin:28px 0}.needs span{border:1px solid var(--trr-border);border-radius:30px;padding:7px 15px}.paper-note{border-left:3px solid var(--trr-signal);padding-left:20px;margin:32px 0}.footer{margin:60px 0 25px;padding-top:20px;border-top:1px solid var(--trr-border)}summary{cursor:pointer}img{max-width:100%}.hero-media>img{width:100%}.resource-grid a{display:flex}.hero-nav a{white-space:nowrap}.markdown-body h2{scroll-margin-top:20px}video:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid #ff945e;outline-offset:4px}@media(max-width:760px){.demo-grid,.platform-grid{grid-template-columns:1fr}.demo-card:last-child{grid-column:auto}.page-shell{padding:0 18px}.hero-nav{gap:14px}.platform-card{padding:22px}}
 
 .hero-meta{font-size:16px!important;line-height:1.8!important;color:var(--trr-body)!important}.eyebrow{font-size:13px!important;letter-spacing:.12em!important}
+
+
+.hero{padding-top:2.5rem}
+.brand-bar{display:flex;align-items:center;justify-content:space-between;gap:2rem;margin:0 auto 4rem;text-align:left}
+.brand-lockup{display:flex;align-items:center;gap:1rem;min-width:0}
+.markdown-body .brand-mark{border-radius:12px;flex:0 0 64px;height:64px;margin:0;width:64px}
+.brand-copy{min-width:0}
+.markdown-body .brand-copy h1{border:0;font-size:clamp(1.25rem,2.2vw,2rem);font-weight:650;letter-spacing:-.035em;line-height:1.2;margin:0 0 .45rem;padding:0}
+.markdown-body .brand-tagline{color:var(--trr-body);font-size:1rem;line-height:1.5;margin:0}
+.brand-institutions{align-items:center;display:flex;flex-shrink:0;gap:1.25rem}
+.markdown-body .brand-institutions img{height:48px;margin:0;opacity:.8;width:auto}
+.markdown-body .brand-institutions .chizhi-brand{height:52px}
+@media(max-width:760px){.brand-bar{flex-wrap:wrap;gap:1.25rem;margin-bottom:3rem}.brand-lockup{width:100%}.brand-institutions{margin-left:auto}.markdown-body .brand-mark{flex-basis:52px;height:52px;width:52px}.markdown-body .brand-copy h1{font-size:clamp(1.05rem,4.7vw,1.35rem)}.markdown-body .brand-tagline{font-size:.9rem}.markdown-body .brand-institutions img{height:38px}.markdown-body .brand-institutions .chizhi-brand{height:42px}}
