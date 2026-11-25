@@ -1,0 +1,51 @@
+{
+  "date": "2026-11-25",
+  "scope": "参考控制仿真演示，非训练策略实机评测",
+  "videos": [
+    {
+      "id": "moon",
+      "title": "月面装配",
+      "video": "moon.mp4",
+      "poster": "moon.jpg",
+      "bytes": 364139,
+      "sha256": "8a3cc36dd36236472b340f0bdbde9115d4ecff60cafcd12d1d08b0b5320d946f",
+      "source_ref": "final/rl_scenes/moon/film.mp4"
+    },
+    {
+      "id": "weld",
+      "title": "复杂焊接",
+      "video": "weld.mp4",
+      "poster": "weld.jpg",
+      "bytes": 533298,
+      "sha256": "063cef482449303ac24f6580b68c3525a44b6445103e6933b3486153d3fbcaed",
+      "source_ref": "final/rl_scenes/weld/film.mp4"
+    },
+    {
+      "id": "desolder",
+      "title": "热风拆焊",
+      "video": "desolder.mp4",
+      "poster": "desolder.jpg",
+      "bytes": 168071,
+      "sha256": "4636b49b16ced50cbde486d7f2ea6440580688f41360c05cd2420262d904c365",
+      "source_ref": "final/rl_scenes/desolder/film.mp4"
+    },
+    {
+      "id": "repair",
+      "title": "电路板检修",
+      "video": "repair.mp4",
+      "poster": "repair.jpg",
+      "bytes": 621633,
+      "sha256": "c82dbb91b673e7b429d19affbbb9bd34f1526134f8c2370b27e9502dcb0fb4f1",
+      "source_ref": "final/rl_scenes/repair/film.mp4"
+    },
+    {
+      "id": "orbital",
+      "title": "轨道维修",
+      "video": "orbital.mp4",
+      "poster": "orbital.jpg",
+      "bytes": 14248251,
+      "sha256": "fe51bfc7446e7c4b20487b2aa31c173f6dc3f1ccbcdde11332da41b45fa568ee",
+      "source_ref": "final/orbital_sunshade/film.mp4"
+    }
+  ]
+}

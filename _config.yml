@@ -1,3 +1,4 @@
 title: TRR
-description: Thermal interaction simulation and RGBT data generation for robots.
+lang: zh-CN
+description: 机器人热交互仿真、同步RGBT数据生成与任务评估。
 theme: jekyll-theme-primer

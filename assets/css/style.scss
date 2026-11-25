@@ -95,6 +95,14 @@ body {
   max-width: 850px;
 }
 
+.markdown-body .hero-mark {
+  border-radius: 16px;
+  display: block;
+  height: auto;
+  margin: 0 auto 1.5rem;
+  width: clamp(72px, 10vw, 96px);
+}
+
 .markdown-body .eyebrow,
 .resource-type {
   color: var(--trr-signal);
@@ -517,6 +525,7 @@ body {
 }
 
 .markdown-body .closing img {
+  border-radius: 10px;
   flex: 0 0 64px;
   margin: 0;
 }
