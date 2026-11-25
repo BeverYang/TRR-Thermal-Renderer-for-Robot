@@ -1,0 +1,134 @@
+{
+  "format": "HTML sequence with original frame crops",
+  "derivation": "按原始帧边界裁切并去除分隔白线；无整图反色、遮罩、锐化或温标",
+  "assets": [
+    {
+      "file": "cooling-rgb-1.png",
+      "width": 182,
+      "height": 131,
+      "bytes": 15308,
+      "sha256": "d0bc4a7a71749ee63ed66df6711ea54f9237e58658c8410f28398c9df3f4b4c0",
+      "source_ref": "../thermal-interaction-sequence.png"
+    },
+    {
+      "file": "cooling-rgb-2.png",
+      "width": 177,
+      "height": 131,
+      "bytes": 15212,
+      "sha256": "56af4f9f66295b1eafaf38592868efbef9257f5d570ed3ce810f1b1821a9a9e8",
+      "source_ref": "../thermal-interaction-sequence.png"
+    },
+    {
+      "file": "cooling-rgb-3.png",
+      "width": 169,
+      "height": 131,
+      "bytes": 16292,
+      "sha256": "3979d32177aa43414c7fbc2d7b79b67cff1c1ea765bdf3354120d31b9a4a5a0a",
+      "source_ref": "../thermal-interaction-sequence.png"
+    },
+    {
+      "file": "cooling-rgb-4.png",
+      "width": 161,
+      "height": 131,
+      "bytes": 15762,
+      "sha256": "641fc0efb556787a2d3784944a6cc138cb3fc305a1fa4c853dd8585afcc17892",
+      "source_ref": "../thermal-interaction-sequence.png"
+    },
+    {
+      "file": "cooling-thermal-1.png",
+      "width": 182,
+      "height": 131,
+      "bytes": 3043,
+      "sha256": "b724e05848142739ebfb2eb65121b341bca3619cd397a75f404a965321f60223",
+      "source_ref": "../thermal-interaction-sequence.png"
+    },
+    {
+      "file": "cooling-thermal-2.png",
+      "width": 177,
+      "height": 131,
+      "bytes": 3113,
+      "sha256": "c99f2832d5ab5f5e7fb905134a11b1870989e3ec926cb64aeceabe19e4ce1b7e",
+      "source_ref": "../thermal-interaction-sequence.png"
+    },
+    {
+      "file": "cooling-thermal-3.png",
+      "width": 169,
+      "height": 131,
+      "bytes": 3163,
+      "sha256": "ebd57e80c63306dc4b991c5f1639930779d03bf19121ba9fd989448b0d1e689a",
+      "source_ref": "../thermal-interaction-sequence.png"
+    },
+    {
+      "file": "cooling-thermal-4.png",
+      "width": 161,
+      "height": 131,
+      "bytes": 5218,
+      "sha256": "92f16dfea05f37a8e938bf28d99418204661161b7ad5c26bf9692e068eea0321",
+      "source_ref": "../thermal-interaction-sequence.png"
+    },
+    {
+      "file": "transfer-rgb-1.png",
+      "width": 182,
+      "height": 105,
+      "bytes": 14434,
+      "sha256": "94ddeef435c6cbecf600d19f450aa976ef89cf5612bf27316b99fa97b7a04bc7",
+      "source_ref": "../thermal-interaction-sequence.png"
+    },
+    {
+      "file": "transfer-rgb-2.png",
+      "width": 177,
+      "height": 105,
+      "bytes": 16283,
+      "sha256": "c3f894dd9814909e32463c069fa6edd43929bce677e362877f7a85f81c520176",
+      "source_ref": "../thermal-interaction-sequence.png"
+    },
+    {
+      "file": "transfer-rgb-3.png",
+      "width": 169,
+      "height": 105,
+      "bytes": 15936,
+      "sha256": "8a8d89b8ab96782a5ff9049b420d17cb886b41cfcd815bbf0736d442b4067cda",
+      "source_ref": "../thermal-interaction-sequence.png"
+    },
+    {
+      "file": "transfer-rgb-4.png",
+      "width": 161,
+      "height": 105,
+      "bytes": 13595,
+      "sha256": "b216c5dd2c12290e6224c7032cccb044c5afae922a2bb652a529eda2c28db1b5",
+      "source_ref": "../thermal-interaction-sequence.png"
+    },
+    {
+      "file": "transfer-thermal-1.png",
+      "width": 182,
+      "height": 131,
+      "bytes": 3248,
+      "sha256": "379f3eb8a7eb71af6c03a28dc5f625a89bbbeb8600cc960a3acdd7677fb937f9",
+      "source_ref": "../thermal-interaction-sequence.png"
+    },
+    {
+      "file": "transfer-thermal-2.png",
+      "width": 177,
+      "height": 131,
+      "bytes": 3919,
+      "sha256": "602471e3f0853af5d0ac832b5e6a1732b85950a00c20fe7eab107949e909038a",
+      "source_ref": "../thermal-interaction-sequence.png"
+    },
+    {
+      "file": "transfer-thermal-3.png",
+      "width": 169,
+      "height": 131,
+      "bytes": 3931,
+      "sha256": "843334f2b1568a562891903f67e85b74763f376f493ff4a06029e0ee291a6a27",
+      "source_ref": "../thermal-interaction-sequence.png"
+    },
+    {
+      "file": "transfer-thermal-4.png",
+      "width": 161,
+      "height": 131,
+      "bytes": 8526,
+      "sha256": "d699782f4e388e6d7698cd93a50720b68d1c003b6ae81e83c7f79ea122e80df8",
+      "source_ref": "../thermal-interaction-sequence.png"
+    }
+  ]
+}

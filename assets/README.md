@@ -11,7 +11,7 @@
 - `thermal-history-poster.jpg`、`thermal-history-mobile-poster.jpg`：对应视频关键帧封面。
 - `flow-rgb.png`、`flow-thermal.png`：从同一真实输出帧裁出的首屏同步观测小图。
 - `thermal-interaction-sequence.png`：转运、再抓持、冷却的 RGB/温度序列原图。
-- `thermal-interaction-sequence-dark.png`：当前页面使用的深色版，仅调整图外背景与文字颜色，RGB、热图和色标保持原色。
+- `sequence/`：当前页面使用的 16 张原始帧裁切，按帧边界去除分隔白线，不使用整图遮罩或温标；摘要见 `sequence/manifest.json`。
 - `trr-overview.png`：原有技术总览；`rgbt-backends.png`：两后端成像示例。
 - `trr-logo.png`：TRR 热手印标志；机构标志沿用既有素材。
 

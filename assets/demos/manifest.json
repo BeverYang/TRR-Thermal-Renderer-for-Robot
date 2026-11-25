@@ -94,13 +94,10 @@
     }
   ],
   "data_output": {
-    "file": "../thermal-interaction-sequence-dark.png",
-    "width": 978,
-    "height": 611,
-    "bytes": 184935,
-    "sha256": "516aa28eb97646fe610602325690b828d1e7a09a4da0a6b2143df39e1567dae8",
+    "format": "HTML sequence with 16 original frame crops",
+    "manifest": "../sequence/manifest.json",
     "source_ref": "../thermal-interaction-sequence.png",
-    "derivation": "仅将图外背景与文字改为深色主题，RGB、热图和色标保持原色"
+    "derivation": "按原始帧边界裁切并去除分隔白线；不使用整图反色、遮罩、锐化或温标"
   },
   "workflow_observations": [
     {

@@ -10,15 +10,15 @@
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
   <link rel="icon" href="assets/trr-logo.png">
-  <link rel="stylesheet" href="assets/css/site.css?v=20261125-2">
-  <script src="assets/js/site.js?v=20261125-2" defer></script>
+  <link rel="stylesheet" href="assets/css/site.css?v=20261125-4">
+  <script src="assets/js/site.js?v=20261125-4" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">跳到正文</a>
   <nav class="site-nav" data-site-nav aria-label="页面导航">
     <div class="nav-inner">
       <a class="nav-brand" href="#overview" aria-label="TRR 首页">
-        <img src="assets/trr-logo.png" alt="" width="32" height="32">
+        <img src="assets/trr-logo.png?v=20261125-4" alt="" width="32" height="32">
         <span>TRR</span>
       </a>
       <div class="nav-links">
@@ -91,8 +91,8 @@
           </li>
           <li class="flow-step">
             <div class="flow-visual flow-observations">
-              <img src="assets/flow-rgb.png" alt="工件与支撑面的可见光观测" width="176" height="88">
-              <img src="assets/flow-thermal.png" alt="同一视角的热红外观测" width="176" height="88">
+              <img src="assets/flow-rgb.png?v=20261125-4" alt="工件与支撑面的可见光观测" width="176" height="88">
+              <img src="assets/flow-thermal.png?v=20261125-4" alt="同一视角的热红外观测" width="176" height="88">
             </div>
             <div class="flow-copy">
               <span class="step-kicker">观测</span>
@@ -101,7 +101,6 @@
             </div>
           </li>
         </ol>
-        <a class="primary-button" href="#interaction">观看温度变化示例</a>
       </div>
     </section>
 
@@ -120,25 +119,34 @@
             <source src="assets/thermal-history-mobile.mp4" type="video/mp4">
           </video>
         </div>
-        <p class="media-caption">28 秒节选，源记录包含加速播放，不代表实时过程速度。各观测区域使用画面内标注的固定温度色标。</p>
-
         <ol class="stage-list">
-          <li>
+          <li class="stage-contact">
             <span class="stage-index">01</span>
             <h3>接触</h3>
             <p>热工件与支撑表面接触，接触区域逐渐升温。</p>
+            <span class="stage-time">0–174.3 s</span>
           </li>
-          <li>
+          <li class="stage-transfer">
             <span class="stage-index">02</span>
             <h3>转移</h3>
             <p>机器人移走工件，原接触位置仍可观察到余热。</p>
+            <span class="stage-time">174.3–218.8 s</span>
           </li>
-          <li>
+          <li class="stage-cooling">
             <span class="stage-index">03</span>
             <h3>冷却</h3>
             <p>余热随时间消退，而机器人的后续操作需要考虑正在变化的热状态。</p>
+            <span class="stage-time">218.8–339.8 s</span>
           </li>
         </ol>
+        <div class="stage-timeline" aria-label="时间轴：仿真时间从左向右推进">
+          <div class="timeline-heading"><strong>时间轴</strong><span>仿真时间，从左向右 →</span></div>
+          <div class="timeline-track">
+            <div class="timeline-segment timeline-contact"><span class="timeline-node"></span><span class="timeline-line"></span><div class="timeline-times"><span>0 s</span><span>174.3 s</span></div></div>
+            <div class="timeline-segment timeline-transfer"><span class="timeline-node"></span><span class="timeline-line"></span><div class="timeline-times"><span>174.3 s</span><span>218.8 s</span></div></div>
+            <div class="timeline-segment timeline-cooling"><span class="timeline-node"></span><span class="timeline-line"></span><div class="timeline-times"><span>218.8 s</span><span>339.8 s</span></div></div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -186,14 +194,14 @@
             </article>
           </div>
         </div>
-        <p class="media-caption">视频为参考控制仿真演示，不是训练策略的实机评测。不同案例的温度范围以各自画面标注为准。</p>
+        <p class="scenario-note">*视频为参考控制仿真演示</p>
       </div>
     </section>
 
     <section class="section" id="platform" aria-labelledby="platform-title">
       <div class="container">
         <header class="section-header">
-          <h2 id="platform-title">从任务场景配置到同步数据</h2>
+          <h2 id="platform-title">工作流程</h2>
           <p>配置工件、材料与初始热状态，在机器人操作过程中推进热仿真，并记录对应的观测与操作信息。</p>
         </header>
         <div class="data-layout">
@@ -212,9 +220,30 @@
             </article>
             <p class="data-note">这些同步数据可用于机器人策略的训练或评估，具体用途取决于任务定义和数据格式。</p>
           </div>
-          <figure class="output-figure">
-            <img src="assets/thermal-interaction-sequence-dark.png" alt="转运、支撑冷却、再抓持和余热阶段的可见光与温度场序列" width="978" height="611">
-            <figcaption>真实仿真输出序列：上图记录转运与再抓持，下图记录支撑冷却；色标单位为 °C，仿真时间见各帧标注。</figcaption>
+          <figure class="output-figure research-sequence">
+            <section class="sequence-group" aria-label="转运与再抓持">
+              <h3 class="sequence-group-title">转运与再抓持</h3>
+              <div class="sequence-content">
+                <div class="sequence-frames">
+                  <div class="sequence-frame"><span class="sequence-time">抓取 A · 171.8 s</span><span class="sequence-label">RGB</span><img src="assets/sequence/transfer-rgb-1.png?v=20261125-4" alt="抓取A时的可见光画面"><span class="sequence-label">热像</span><img src="assets/sequence/transfer-thermal-1.png?v=20261125-4" alt="抓取A时的温度场"></div>
+                  <div class="sequence-frame"><span class="sequence-time">放置 B · 179.0 s</span><span class="sequence-label">RGB</span><img src="assets/sequence/transfer-rgb-2.png?v=20261125-4" alt="放置B时的可见光画面"><span class="sequence-label">热像</span><img src="assets/sequence/transfer-thermal-2.png?v=20261125-4" alt="放置B时的温度场"></div>
+                  <div class="sequence-frame"><span class="sequence-time">再次抓持 · 215.0 s</span><span class="sequence-label">RGB</span><img src="assets/sequence/transfer-rgb-3.png?v=20261125-4" alt="再次抓持时的可见光画面"><span class="sequence-label">热像</span><img src="assets/sequence/transfer-thermal-3.png?v=20261125-4" alt="再次抓持时的温度场"></div>
+                  <div class="sequence-frame"><span class="sequence-time">余热 · 279.8 s</span><span class="sequence-label">RGB</span><img src="assets/sequence/transfer-rgb-4.png?v=20261125-4" alt="余热阶段的可见光画面"><span class="sequence-label">热像</span><img src="assets/sequence/transfer-thermal-4.png?v=20261125-4" alt="余热阶段的温度场"></div>
+                </div>
+              </div>
+            </section>
+            <section class="sequence-group" aria-label="支撑冷却">
+              <h3 class="sequence-group-title">支撑冷却</h3>
+              <div class="sequence-content">
+                <div class="sequence-frames">
+                  <div class="sequence-frame"><span class="sequence-time">初始接触 · 0.0 s</span><span class="sequence-label">RGB</span><img src="assets/sequence/cooling-rgb-1.png?v=20261125-4" alt="初始接触的可见光画面"><span class="sequence-label">热像</span><img src="assets/sequence/cooling-thermal-1.png?v=20261125-4" alt="初始接触的温度场"></div>
+                  <div class="sequence-frame"><span class="sequence-time">支撑冷却 · 201.0 s</span><span class="sequence-label">RGB</span><img src="assets/sequence/cooling-rgb-2.png?v=20261125-4" alt="支撑冷却的可见光画面"><span class="sequence-label">热像</span><img src="assets/sequence/cooling-thermal-2.png?v=20261125-4" alt="支撑冷却的温度场"></div>
+                  <div class="sequence-frame"><span class="sequence-time">抓取 · 603.0 s</span><span class="sequence-label">RGB</span><img src="assets/sequence/cooling-rgb-3.png?v=20261125-4" alt="抓取的可见光画面"><span class="sequence-label">热像</span><img src="assets/sequence/cooling-thermal-3.png?v=20261125-4" alt="抓取时的温度场"></div>
+                  <div class="sequence-frame"><span class="sequence-time">余热 · 680.5 s</span><span class="sequence-label">RGB</span><img src="assets/sequence/cooling-rgb-4.png?v=20261125-4" alt="余热阶段的可见光画面"><span class="sequence-label">热像</span><img src="assets/sequence/cooling-thermal-4.png?v=20261125-4" alt="余热阶段的温度场"></div>
+                </div>
+              </div>
+            </section>
+            <figcaption>同步 RGB 与温度场观测。</figcaption>
           </figure>
         </div>
         <p class="technical-note">温度伪彩图是温度场的可视化，不应直接视为某一型号热红外传感器的完整成像模型。具体传感器响应、标定与导出格式需要按实际配置说明。</p>
@@ -237,7 +266,6 @@
             <p>机器人可见光-热红外训练、测试仿真数据，配套端到端热红外-可见光机器人操作策略算法。</p>
           </article>
         </div>
-        <a class="text-link" href="https://arxiv.org/html/2611.20792v1" target="_blank" rel="noopener">在论文中查看方法与实验 ↗</a>
       </div>
     </section>
 
@@ -261,8 +289,8 @@
 
         <div class="team-block">
           <div class="team-logos">
-            <img src="assets/bit-logo-mono.png" alt="北京理工大学" height="44">
-            <img src="assets/chizhi-lockup-mono.png" alt="炽智实验室" height="44">
+            <img src="assets/bit-logo-mono.png?v=20261125-4" alt="北京理工大学" height="44">
+            <img src="assets/chizhi-brand.png?v=20261125-4" alt="CHIZHI LAB 炽智实验室" height="44">
           </div>
           <div class="team-copy">
             <h3>团队</h3>
