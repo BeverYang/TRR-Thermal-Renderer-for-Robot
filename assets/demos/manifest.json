@@ -7,6 +7,9 @@
       "title": "月面装配",
       "video": "moon.mp4",
       "poster": "moon.jpg",
+      "width": 1280,
+      "height": 600,
+      "duration_seconds": 57.166667,
       "bytes": 364139,
       "sha256": "8a3cc36dd36236472b340f0bdbde9115d4ecff60cafcd12d1d08b0b5320d946f",
       "source_ref": "final/rl_scenes/moon/film.mp4"
@@ -16,6 +19,9 @@
       "title": "复杂焊接",
       "video": "weld.mp4",
       "poster": "weld.jpg",
+      "width": 1280,
+      "height": 600,
+      "duration_seconds": 32.666667,
       "bytes": 533298,
       "sha256": "063cef482449303ac24f6580b68c3525a44b6445103e6933b3486153d3fbcaed",
       "source_ref": "final/rl_scenes/weld/film.mp4"
@@ -25,27 +31,93 @@
       "title": "热风拆焊",
       "video": "desolder.mp4",
       "poster": "desolder.jpg",
+      "width": 1280,
+      "height": 600,
+      "duration_seconds": 20.833333,
       "bytes": 168071,
       "sha256": "4636b49b16ced50cbde486d7f2ea6440580688f41360c05cd2420262d904c365",
       "source_ref": "final/rl_scenes/desolder/film.mp4"
     },
     {
-      "id": "repair",
-      "title": "电路板检修",
-      "video": "repair.mp4",
-      "poster": "repair.jpg",
-      "bytes": 621633,
-      "sha256": "c82dbb91b673e7b429d19affbbb9bd34f1526134f8c2370b27e9502dcb0fb4f1",
-      "source_ref": "final/rl_scenes/repair/film.mp4"
+      "id": "tunnel",
+      "title": "隧道救援",
+      "video": "tunnel.mp4",
+      "poster": "tunnel.jpg",
+      "width": 1280,
+      "height": 592,
+      "duration_seconds": 20,
+      "bytes": 1095314,
+      "sha256": "183ccc9c73238a22d9384b16dbc70b82aa956f7252ce8e76b238b0c2a3d73f1b",
+      "poster_sha256": "17e692517f4296bbee577f454d81ec6e6fba9eb41d7cf84257adc4b58a9bb461",
+      "source_ref": "final/02_tunnel/film.mp4",
+      "poster_source_ref": "final/02_tunnel/frame_0220.jpg"
     },
     {
       "id": "orbital",
       "title": "轨道维修",
       "video": "orbital.mp4",
       "poster": "orbital.jpg",
+      "width": 1920,
+      "height": 1080,
+      "duration_seconds": 90,
       "bytes": 14248251,
       "sha256": "fe51bfc7446e7c4b20487b2aa31c173f6dc3f1ccbcdde11332da41b45fa568ee",
       "source_ref": "final/orbital_sunshade/film.mp4"
+    }
+  ],
+  "core_demo": [
+    {
+      "id": "thermal-history-desktop",
+      "video": "../thermal-history-demo.mp4",
+      "poster": "../thermal-history-poster.jpg",
+      "width": 640,
+      "height": 180,
+      "duration_seconds": 28,
+      "bytes": 253821,
+      "sha256": "669392780583053cd762364364931bd453fd312ae4a6360a766fb47dd3b04178",
+      "poster_sha256": "b19287d2bd63fad05ac1279f2c0685e6f8595fc5f56ba10e01e7bba77bdeb930",
+      "source_ref": "../thermal-history-demo.gif",
+      "derivation": "源GIF第10至38秒，裁去底部参数和曲线；未放大或锐化"
+    },
+    {
+      "id": "thermal-history-mobile",
+      "video": "../thermal-history-mobile.mp4",
+      "poster": "../thermal-history-mobile-poster.jpg",
+      "width": 212,
+      "height": 360,
+      "duration_seconds": 28,
+      "bytes": 179477,
+      "sha256": "3346945da9b63a9ea257f363e7cef1e42e4e01201553f132c4870829f129c112",
+      "poster_sha256": "a4f6f1dce5a806c724e024ef33471a7e0b7dbf9406feb500b210b6275948c4e3",
+      "source_ref": "../thermal-history-demo.gif",
+      "derivation": "同一节选的RGB与全景热观测上下排列；未放大或锐化"
+    }
+  ],
+  "data_output": {
+    "file": "../thermal-interaction-sequence-dark.png",
+    "width": 978,
+    "height": 611,
+    "bytes": 184935,
+    "sha256": "516aa28eb97646fe610602325690b828d1e7a09a4da0a6b2143df39e1567dae8",
+    "source_ref": "../thermal-interaction-sequence.png",
+    "derivation": "仅将图外背景与文字改为深色主题，RGB、热图和色标保持原色"
+  },
+  "workflow_observations": [
+    {
+      "file": "../flow-rgb.png",
+      "width": 176,
+      "height": 88,
+      "bytes": 14579,
+      "sha256": "8cd8bf9b53bf383aa5ef7d232f85f5b1db09f3fab366011eb1fedee41aad9357",
+      "source_ref": "../thermal-interaction-sequence.png"
+    },
+    {
+      "file": "../flow-thermal.png",
+      "width": 176,
+      "height": 86,
+      "bytes": 2280,
+      "sha256": "43d792c43d2ab5b2cf9424c4484da9cec613ad5df908480f50af84bd8949178c",
+      "source_ref": "../thermal-interaction-sequence.png"
     }
   ]
 }

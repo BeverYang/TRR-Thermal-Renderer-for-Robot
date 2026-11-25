@@ -1,4 +1,4 @@
 title: TRR
 lang: zh-CN
-description: 机器人热交互仿真、同步RGBT数据生成与任务评估。
+description: 机器人操作温度仿真、同步可见光与热红外观测。
 theme: jekyll-theme-primer
